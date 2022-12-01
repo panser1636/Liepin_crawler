@@ -12,7 +12,7 @@ import sqlite3
 
 class Bosspro2Pipeline:
     def process_item(self, item, spider):
-        # self.conn = pymysql.Connect(host="localhost", user="root", password="011223", db="job_information", charset='utf8')
+        # self.conn = pymysql.Connect(host="localhost", user="root", password="******", db="job_information", charset='utf8')
         self.conn = sqlite3.connect(r'D:\job_information.db')
         self.cursor = self.conn.cursor()
         self.cursor.execute(
